@@ -1,0 +1,23 @@
+{
+	"name":"Node.js",
+	"build":{
+	  "dockerfile":"Dockerfile",
+	  "args":{
+			"VARIANT":"18-bullseye"
+	  }
+	},
+	"settings": {},
+	"extensions":[
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode"
+	],
+	"remoteUser":"node",
+	"features": {
+		"docker-from-docker": "latest",
+		"git": "latest"
+	},
+	"postCreateCommand":"npm install",
+	"runArgs":[
+	  "--network=host"
+	]
+}

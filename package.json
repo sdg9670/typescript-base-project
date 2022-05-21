@@ -1,0 +1,67 @@
+{
+  "name": "typescript-base-project",
+  "version": "1.0.0",
+  "description": "test",
+  "keywords": [
+    "node.js",
+    "typescript",
+    "eslint",
+    "prettier",
+    "mocha",
+    "typedoc",
+    "devcontainer"
+  ],
+  "homepage": "https://github.com/sdg9670/typescript-base-project",
+  "bugs": {
+    "url": "https://github.com/sdg9670/typescript-base-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sdg9670/typescript-base-project.git"
+  },
+  "author": {
+    "name": "SimDdong",
+    "email": "sdg9670@naver.com",
+    "url": "https://sdg9670.github.io"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "MIT",
+  "private": false,
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon",
+    "dev:typedoc": "typedoc --watch --preserveWatchOutput",
+    "start:dev": "cross-env NODE_ENV=development node -r ./tsconfig-paths-bootstrap.js dist/index.js",
+    "build": "tsc",
+    "build:typedoc": "typedoc",
+    "test": "npm run build && mocha -r ts-node/register -r tsconfig-paths/register spec/**/*.spec.ts",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/chai-as-promised": "^7.1.5",
+    "@types/mocha": "^9.1.1",
+    "@typescript-eslint/eslint-plugin": "^5.23.0",
+    "@typescript-eslint/parser": "^5.23.0",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.15.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^12.4.1",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2",
+    "ts-node": "^10.7.0",
+    "tsconfig-paths": "^4.0.0",
+    "typedoc": "^0.22.15",
+    "typescript": "^4.6.4"
+  }
+}

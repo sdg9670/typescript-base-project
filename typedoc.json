@@ -1,0 +1,7 @@
+{
+  "plugin": ["./typedoc.plugin.class-default.js"],
+  "entryPoints": ["./src"],
+  "out": "docs",
+  "tsconfig": "./tsconfig.json",
+  "entryPointStrategy": "expand"
+}
