@@ -1,4 +1,4 @@
-# The Node.js Base Project
+# The Typescript Base Project
 
 The project is configured with useful plugins.
 Also, You can develop project in docker dev environment with Devcontainer offerd at VSCode.
