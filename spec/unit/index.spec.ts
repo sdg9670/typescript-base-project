@@ -1,7 +1,8 @@
+import index from '@/index';
 import { expect } from 'chai';
 
 describe('index.ts', () => {
-  it('test', () => {
-    expect(1).to.equal(1);
+  it('check property', () => {
+    expect(index).to.have.property('module');
   });
 });

@@ -1,3 +1,5 @@
+import module from '@/module';
+
 export default {
-  abc: '',
+  module,
 };
